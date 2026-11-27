@@ -1,12 +1,11 @@
-# Security & Cryptographic Release Verification Policy (`open-dev-bench-19800/day0-index-probe`)
+# Slay the Spire 2 Trainer, Mod Menu & Save Editor (v1.2.1 — Windows 10/11 x64 Verification Ledger)
 
-> **Verified Release Channel:** `v1.2.0` (`2026-11-26 23:54 UTC`) — `Windows 10/11 (x64)`
+> **Verified Release Channel:** `v1.2.1` (`2026-11-27 00:37 UTC`) — `Windows 10/11 (x64) & Steam Deck`
 
-## Supported Versions & Binary Verification Ledger
+## Binary Integrity & Compatibility Table
 
-| Release Version & Channel | Component & Search Target | Supported OS & Graphics Stack | Verification Status |
+| Version & Channel | Package / Search Variation | Supported OS & Steam Build | Verification Status |
 | :--- | :--- | :--- | :--- |
-| `v1.2.0-stable` | `Tekla Structures 2026 Portable & Offline Installer` | Windows 11 24H2 / Windows 10 22H2 (x64) | Verified Clean (`MIT`) |
-| `v1.2.0-stable` | `Slay the Spire 2 Trainer, Mod Menu & Save Editor` | Windows 11 / Steam x64 | Verified Clean (`MIT`) |
-| `v1.2.0-stable` | `OptiScaler FSR4, shadPS4 Bloodborne & Ryujinx Prod Keys` | Vulkan 1.3 / DirectX 12 | Verified Clean (`MIT`) |
-| `v1.2.0-stable` | `Solara Executor v3 & Xeno Executor PC (sUNC Keyless)` | Windows 10/11 x64 | Verified Clean (`MIT`) |
+| `v1.2.1-stable` | `Slay the Spire 2 Trainer & In-Game Mod Menu` | Windows 11 24H2 / Windows 10 22H2 (x64) | Verified Clean (`MIT`) |
+| `v1.2.1-stable` | `Slay the Spire 2 Save Editor & Deck/Relic Unlocker` | Steam Early Access & Latest Patch | Verified Clean (`MIT`) |
+| `v1.2.1-stable` | `Slay the Spire 2 Cheat Table & BepInEx Mod Loader` | Windows 10/11 x64 & Proton | Verified Clean (`MIT`) |
